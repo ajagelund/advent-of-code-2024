@@ -3,16 +3,16 @@ using AdventOfCode.Logic.Days;
 
 namespace AdventOfCode.Tests.Days;
 
-public class DayOneTest
+public class DayTwoTest
 {
-    private readonly string[] input = FileReader.Read("Day01-Sample.txt");
-    private readonly IDay sut = new DayOne();
+    private readonly string[] input = FileReader.Read("Day02-Sample.txt");
+    private readonly IDay sut = new DayTwo();
 
     [Fact]
     public void PartOneTest()
     {
         //Arrange
-        var expected = "11";
+        var expected = "2";
 
         //Act
         var result = sut.PartOne(input);
@@ -25,7 +25,7 @@ public class DayOneTest
     public void PartTwoTest()
     {
         //Arrange
-        var expected = "31";
+        var expected = "4";
 
         //Act
         var result = sut.PartTwo(input);

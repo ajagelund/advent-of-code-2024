@@ -8,10 +8,22 @@ Console.WriteLine(" Advent of Code 2024 - C# Runner");
 Console.WriteLine(" **** **** *** *** *** **** ****");
 Console.WriteLine();
 
-var dayOne = new DayOne();
-var lines = FileReader.Read("Day01.txt");
-var result = dayOne.PartOne(lines);
-Console.WriteLine($"Day 01 - Part 1: {result}");
+#region Day 1
+// var dayOne = new DayOne();
+// var lines = FileReader.Read("Day01.txt");
+// var result = dayOne.PartOne(lines);
+// Console.WriteLine($"Day 01 - Part 1: {result}");
+//
+// var resultDayOnePartTwo = dayOne.PartTwo(lines);
+// Console.WriteLine($"Day 01 - Part 2: {resultDayOnePartTwo}");
+#endregion
 
-var resultDayOnePartTwo = dayOne.PartTwo(lines);
-Console.WriteLine($"Day 01 - Part 2: {resultDayOnePartTwo}");
+
+#region Day 2
+var dayTwo = new DayTwo();
+var linesDayTwo = FileReader.Read("Day02.txt");
+var resultDayTwoPartOne = dayTwo.PartOne(linesDayTwo);
+Console.WriteLine($"Day 02 - Part 1: {resultDayTwoPartOne}");
+var resultDayTwoPartTwo = dayTwo.PartTwo(linesDayTwo);
+Console.WriteLine($"Day 02 - Part 2: {resultDayTwoPartTwo}");
+#endregion
